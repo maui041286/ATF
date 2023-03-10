@@ -1,0 +1,11 @@
+C:\Users\miche\OneDrive\Desktop\Program\KDFTest1\KeywordDrivenFramework\bin\Debug\selenium-manager\linux\selenium-manager
+C:\Users\miche\OneDrive\Desktop\Program\KDFTest1\KeywordDrivenFramework\bin\Debug\selenium-manager\macos\selenium-manager
+C:\Users\miche\OneDrive\Desktop\Program\KDFTest1\KeywordDrivenFramework\bin\Debug\selenium-manager\windows\selenium-manager.exe
+C:\Users\miche\OneDrive\Desktop\Program\KDFTest1\KeywordDrivenFramework\bin\Debug\KeywordDrivenFramework.dll
+C:\Users\miche\OneDrive\Desktop\Program\KDFTest1\KeywordDrivenFramework\bin\Debug\KeywordDrivenFramework.pdb
+C:\Users\miche\OneDrive\Desktop\Program\KDFTest1\KeywordDrivenFramework\bin\Debug\WebDriver.dll
+C:\Users\miche\OneDrive\Desktop\Program\KDFTest1\KeywordDrivenFramework\obj\Debug\KeywordDrivenFramework.csproj.AssemblyReference.cache
+C:\Users\miche\OneDrive\Desktop\Program\KDFTest1\KeywordDrivenFramework\obj\Debug\KeywordDrivenFramework.csproj.CoreCompileInputs.cache
+C:\Users\miche\OneDrive\Desktop\Program\KDFTest1\KeywordDrivenFramework\obj\Debug\KeywordDrivenFramework.csproj.CopyComplete
+C:\Users\miche\OneDrive\Desktop\Program\KDFTest1\KeywordDrivenFramework\obj\Debug\KeywordDrivenFramework.dll
+C:\Users\miche\OneDrive\Desktop\Program\KDFTest1\KeywordDrivenFramework\obj\Debug\KeywordDrivenFramework.pdb

@@ -1,0 +1,13 @@
+C:\Users\miche\OneDrive\Desktop\Program\KDFTest1\KDFTest1\obj\Debug\KDFTest1.csproj.AssemblyReference.cache
+C:\Users\miche\OneDrive\Desktop\Program\KDFTest1\KDFTest1\obj\Debug\KDFTest1.csproj.SuggestedBindingRedirects.cache
+C:\Users\miche\OneDrive\Desktop\Program\KDFTest1\KDFTest1\obj\Debug\KDFTest1.csproj.CoreCompileInputs.cache
+C:\Users\miche\OneDrive\Desktop\Program\KDFTest1\KDFTest1\bin\Debug\selenium-manager\linux\selenium-manager
+C:\Users\miche\OneDrive\Desktop\Program\KDFTest1\KDFTest1\bin\Debug\selenium-manager\macos\selenium-manager
+C:\Users\miche\OneDrive\Desktop\Program\KDFTest1\KDFTest1\bin\Debug\selenium-manager\windows\selenium-manager.exe
+C:\Users\miche\OneDrive\Desktop\Program\KDFTest1\KDFTest1\bin\Debug\KDFTest1.exe.config
+C:\Users\miche\OneDrive\Desktop\Program\KDFTest1\KDFTest1\bin\Debug\KDFTest1.exe
+C:\Users\miche\OneDrive\Desktop\Program\KDFTest1\KDFTest1\bin\Debug\KDFTest1.pdb
+C:\Users\miche\OneDrive\Desktop\Program\KDFTest1\KDFTest1\bin\Debug\WebDriver.dll
+C:\Users\miche\OneDrive\Desktop\Program\KDFTest1\KDFTest1\obj\Debug\KDFTest1.csproj.CopyComplete
+C:\Users\miche\OneDrive\Desktop\Program\KDFTest1\KDFTest1\obj\Debug\KDFTest1.exe
+C:\Users\miche\OneDrive\Desktop\Program\KDFTest1\KDFTest1\obj\Debug\KDFTest1.pdb
