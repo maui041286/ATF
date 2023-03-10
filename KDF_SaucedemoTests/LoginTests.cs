@@ -5,6 +5,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using Assert = NUnit.Framework.Assert;
 using System.Threading;
+using KDFTest1;
 
 namespace KDF_SaucedemoTests
 {
@@ -12,31 +13,36 @@ namespace KDF_SaucedemoTests
     public class LoginTests
     {
         private IWebDriver _driver;
+        private LoadCSV LoadCSV;
 
         [SetUp]
         public void SetUp()
         {
+            LoadCSV = new LoadCSV();
+            
             _driver = new ChromeDriver();
             _driver.Manage().Window.Maximize();
             _driver.Navigate().GoToUrl("https://www.saucedemo.com/");
+
         }
 
         [TestMethod]
         public void LoginWithValidCredentials_ShouldSucceed()
         {
             SetUp();
-
+            string[] excelData = LoadCSV.ReadFile(@"C:\Users\jvergara\Desktop\Quality assurance Processes\automated testing framework\testdata.csv");
+            
             // Arrange
             var usernameInput = _driver.FindElement(By.CssSelector("#user-name"));
             var passwordInput = _driver.FindElement(By.CssSelector("#password"));
             var loginButton = _driver.FindElement(By.CssSelector("#login-button"));
-            var expectedUrl = "https://www.saucedemo.com/";
+            var expectedUrl = excelData[3].Split(',')[1];
 
             // Act
             SetUp();
-            usernameInput.SendKeys("standard_user");
+            usernameInput.SendKeys(excelData[5].Split(',')[1]);
             Thread.Sleep(2);
-            passwordInput.SendKeys("secret_sauce");
+            passwordInput.SendKeys(excelData[7].Split(',')[1]);
             Thread.Sleep(2);
             loginButton.Click();
 
