@@ -55,3 +55,11 @@ C:\Users\jvergara\Desktop\Quality assurance Processes\automated testing framewor
 C:\Users\jvergara\Desktop\Quality assurance Processes\automated testing framework\ATF\KDF_SaucedemoTests\bin\Debug\KDFTest1.exe
 C:\Users\jvergara\Desktop\Quality assurance Processes\automated testing framework\ATF\KDF_SaucedemoTests\bin\Debug\KDFTest1.pdb
 C:\Users\jvergara\Desktop\Quality assurance Processes\automated testing framework\ATF\KDF_SaucedemoTests\bin\Debug\KDFTest1.exe.config
+C:\Users\jvergara\Desktop\Quality assurance Processes\automated testing framework\ATF\KDF_SaucedemoTests\bin\Debug\Castle.Core.dll
+C:\Users\jvergara\Desktop\Quality assurance Processes\automated testing framework\ATF\KDF_SaucedemoTests\bin\Debug\Moq.dll
+C:\Users\jvergara\Desktop\Quality assurance Processes\automated testing framework\ATF\KDF_SaucedemoTests\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\jvergara\Desktop\Quality assurance Processes\automated testing framework\ATF\KDF_SaucedemoTests\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\jvergara\Desktop\Quality assurance Processes\automated testing framework\ATF\KDF_SaucedemoTests\bin\Debug\Castle.Core.xml
+C:\Users\jvergara\Desktop\Quality assurance Processes\automated testing framework\ATF\KDF_SaucedemoTests\bin\Debug\Moq.xml
+C:\Users\jvergara\Desktop\Quality assurance Processes\automated testing framework\ATF\KDF_SaucedemoTests\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\jvergara\Desktop\Quality assurance Processes\automated testing framework\ATF\KDF_SaucedemoTests\bin\Debug\System.Threading.Tasks.Extensions.xml

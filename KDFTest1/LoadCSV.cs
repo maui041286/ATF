@@ -9,10 +9,10 @@ using OpenQA.Selenium;
 
 namespace KDFTest1
 {
-    public class LoadCSV
+    public class LoadCSV : ILoadData
     {
 
-        public string[] ReadFile(string path)
+        public string[] Read(string path)
         {
             string[] lines = { };
 
@@ -35,6 +35,7 @@ namespace KDFTest1
                 string[] tokens = line.Split(',');
                 string keyword = tokens[0];
                 string data = tokens[1];
+                string unique_id = tokens[2];
 
                 switch (keyword)
                 {
@@ -47,14 +48,11 @@ namespace KDFTest1
                     case "launch_website":
                         driver.Navigate().GoToUrl(data); // navigate to the specified URL
                         break;
-                    case "enter_username":
-                        driver.FindElement(By.Id("user-name")).SendKeys(data); // enter the username
+                    case "type_input":
+                        driver.FindElement(By.Id(unique_id)).SendKeys(data); // enter the username
                         break;
-                    case "enter_password":
-                        driver.FindElement(By.Id("password")).SendKeys(data); // enter the password
-                        break;
-                    case "click_login":
-                        driver.FindElement(By.Id("login-button")).Click(); // click the login button
+                    case "click_button":
+                        driver.FindElement(By.Id(unique_id)).Click(); // click the login button
                         break;
                     case "wait":
                         System.Threading.Thread.Sleep(2000); // wait for 10 seconds

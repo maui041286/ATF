@@ -13,11 +13,13 @@ namespace KDFTest1
     {
         static void Main(string[] args)
         {
-            LoadCSV loadCSV = new LoadCSV();
-            string[] lines = loadCSV.ReadFile(@"C:\Users\jvergara\Desktop\Quality assurance Processes\automated testing framework\testdata.csv");
-            IWebDriver driver = new ChromeDriver(); // create a new instance of ChromeDriver
-            loadCSV.ExecuteTestCases(lines,driver);
 
+            ILoadData loadCSV = new LoadCSV();
+            IWebDriver driver = new ChromeDriver(); // create a new instance of ChromeDriver
+            Login loginWebPages = new  Login(loadCSV, driver);
+            loginWebPages.LoginWithValidCredentials();
+           // loginWebPages.LoginWithInvalidCredentials();
+            
            
         }
     }
