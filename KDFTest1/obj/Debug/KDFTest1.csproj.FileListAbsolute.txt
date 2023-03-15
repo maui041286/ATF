@@ -24,3 +24,5 @@ C:\Users\jvergara\Desktop\Quality assurance Processes\automated testing framewor
 C:\Users\jvergara\Desktop\Quality assurance Processes\automated testing framework\ATF\KDFTest1\obj\Debug\KDFTest1.csproj.CopyComplete
 C:\Users\jvergara\Desktop\Quality assurance Processes\automated testing framework\ATF\KDFTest1\obj\Debug\KDFTest1.exe
 C:\Users\jvergara\Desktop\Quality assurance Processes\automated testing framework\ATF\KDFTest1\obj\Debug\KDFTest1.pdb
+C:\Users\jvergara\Desktop\Quality assurance Processes\automated testing framework\ATF\KDFTest1\bin\Debug\nunit.framework.dll
+C:\Users\jvergara\Desktop\Quality assurance Processes\automated testing framework\ATF\KDFTest1\bin\Debug\nunit.framework.xml

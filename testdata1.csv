@@ -1,0 +1,14 @@
+﻿Keyword,Data,Type_selector,Unique_ID
+open_browser,chrome,,
+maximize_window,,,
+launch_website,https://www.saucedemo.com/,,
+wait,1,,
+type_input,standard_user,id,user-name
+wait,3,,
+type_input,secret_sauce2,id,password
+wait,3,,
+click_button,,id,login-button
+assert_text,Epic sadface: Username and password do not match any user in this service,xpath,//body/div[@id='root']/div[1]/div[2]/div[1]/div[1]/div[1]/form[1]/div[3]/h3[1]
+wait,3,,
+wait,5,,
+close_browser,,,

@@ -12,6 +12,6 @@ namespace KDFTest1
 
         string[] Read(string path);
 
-        void ExecuteTestCases(string[] lines, IWebDriver driver);
+        void ExecuteTestCases(string[] lines);
     }
 }

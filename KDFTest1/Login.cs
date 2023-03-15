@@ -11,25 +11,25 @@ namespace KDFTest1
     {
 
         private ILoadData loadData;
-        private IWebDriver driver;
+     
 
-        public Login(ILoadData loadData, IWebDriver driver)
+        public Login(ILoadData loadData)
         {
             this.loadData = loadData;
-            this.driver = driver;
+           
         }
 
         public void LoginWithValidCredentials()
         {
             var lines = loadData.Read(Environment.GetEnvironmentVariable("PATH_DATA_SOURCE"));
-            loadData.ExecuteTestCases(lines, driver);
+            loadData.ExecuteTestCases(lines);
         }
 
 
         public void LoginWithInvalidCredentials()
         {
-            var lines = loadData.Read(Environment.GetEnvironmentVariable("PATH_DATA_SOURCE"));
-            loadData.ExecuteTestCases(lines, driver);
+            var lines = loadData.Read(Environment.GetEnvironmentVariable("PATH_DATA_SOURCE_INVALID_TEST"));
+            loadData.ExecuteTestCases(lines);
         }
     }
 }

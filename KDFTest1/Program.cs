@@ -15,10 +15,9 @@ namespace KDFTest1
         {
 
             ILoadData loadCSV = new LoadCSV();
-            IWebDriver driver = new ChromeDriver(); // create a new instance of ChromeDriver
-            Login loginWebPages = new  Login(loadCSV, driver);
-            loginWebPages.LoginWithValidCredentials();
-           // loginWebPages.LoginWithInvalidCredentials();
+            Login loginWebPages = new  Login(loadCSV);
+            //loginWebPages.LoginWithValidCredentials();
+            loginWebPages.LoginWithInvalidCredentials();
             
            
         }

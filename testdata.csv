@@ -1,0 +1,13 @@
+﻿Keyword,Data,Type_selector,Unique_ID
+open_browser,chrome,,
+maximize_window,,,
+launch_website,https://www.saucedemo.com/,,
+wait,1,,
+type_input,standard_user,id,user-name
+wait,3,,
+type_input,secret_sauce,id,password
+wait,3,,
+click_button,,id,login-button
+wait,3,,
+wait,5,,
+close_browser,,,
