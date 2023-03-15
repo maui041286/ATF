@@ -55,11 +55,9 @@ namespace KDFTest1
                         break;
                     case "type_input":
                         FindElement(driver, type_selector, unique_id).SendKeys(data);
-                        //driver.FindElement(By.Id(unique_id)).SendKeys(data); // enter the username
                         break;
                     case "click_button":
                         FindElement(driver, type_selector, unique_id).Click(); // clicking any button
-                        //driver.FindElement(By.Id(unique_id)).Click(); // click the login button
                         break;
                     case "wait":
                         System.Threading.Thread.Sleep(2000); // wait for 10 seconds
