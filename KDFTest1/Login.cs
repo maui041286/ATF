@@ -21,14 +21,18 @@ namespace KDFTest1
 
         public void LoginWithValidCredentials()
         {
-            var lines = loadData.Read(Environment.GetEnvironmentVariable("PATH_DATA_SOURCE"));
+           // var lines = loadData.Read(Environment.GetEnvironmentVariable("PATH_DATA_SOURCE"));
+            var lines = loadData.Read(Common.Basepath());
+
             loadData.ExecuteTestCases(lines);
         }
 
 
         public void LoginWithInvalidCredentials()
         {
-            var lines = loadData.Read(Environment.GetEnvironmentVariable("PATH_DATA_SOURCE_INVALID_TEST"));
+            //var lines = loadData.Read(Environment.GetEnvironmentVariable("PATH_DATA_SOURCE_INVALID_TEST"));
+            var lines = loadData.Read(Common.Basepath());
+
             loadData.ExecuteTestCases(lines);
         }
     }

@@ -26,3 +26,18 @@ C:\Users\jvergara\Desktop\Quality assurance Processes\automated testing framewor
 C:\Users\jvergara\Desktop\Quality assurance Processes\automated testing framework\ATF\KDFTest1\obj\Debug\KDFTest1.pdb
 C:\Users\jvergara\Desktop\Quality assurance Processes\automated testing framework\ATF\KDFTest1\bin\Debug\nunit.framework.dll
 C:\Users\jvergara\Desktop\Quality assurance Processes\automated testing framework\ATF\KDFTest1\bin\Debug\nunit.framework.xml
+D:\dotnetWorks\KDFTest3\KDFTest1\bin\Debug\selenium-manager\linux\selenium-manager
+D:\dotnetWorks\KDFTest3\KDFTest1\bin\Debug\selenium-manager\macos\selenium-manager
+D:\dotnetWorks\KDFTest3\KDFTest1\bin\Debug\selenium-manager\windows\selenium-manager.exe
+D:\dotnetWorks\KDFTest3\KDFTest1\bin\Debug\KDFTest1.exe.config
+D:\dotnetWorks\KDFTest3\KDFTest1\bin\Debug\KDFTest1.exe
+D:\dotnetWorks\KDFTest3\KDFTest1\bin\Debug\KDFTest1.pdb
+D:\dotnetWorks\KDFTest3\KDFTest1\bin\Debug\nunit.framework.dll
+D:\dotnetWorks\KDFTest3\KDFTest1\bin\Debug\WebDriver.dll
+D:\dotnetWorks\KDFTest3\KDFTest1\bin\Debug\nunit.framework.xml
+D:\dotnetWorks\KDFTest3\KDFTest1\obj\Debug\KDFTest1.csproj.AssemblyReference.cache
+D:\dotnetWorks\KDFTest3\KDFTest1\obj\Debug\KDFTest1.csproj.SuggestedBindingRedirects.cache
+D:\dotnetWorks\KDFTest3\KDFTest1\obj\Debug\KDFTest1.csproj.CoreCompileInputs.cache
+D:\dotnetWorks\KDFTest3\KDFTest1\obj\Debug\KDFTest1.csproj.CopyComplete
+D:\dotnetWorks\KDFTest3\KDFTest1\obj\Debug\KDFTest1.exe
+D:\dotnetWorks\KDFTest3\KDFTest1\obj\Debug\KDFTest1.pdb

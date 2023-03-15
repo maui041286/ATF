@@ -13,13 +13,15 @@ namespace KDFTest1
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Application Started...");
 
             ILoadData loadCSV = new LoadCSV();
             Login loginWebPages = new  Login(loadCSV);
             loginWebPages.LoginWithValidCredentials();
             loginWebPages.LoginWithInvalidCredentials();
-            
-           
+
+            Console.WriteLine("Application Ended...");
+            Console.ReadLine();
         }
     }
 }
