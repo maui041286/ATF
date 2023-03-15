@@ -50,7 +50,7 @@ namespace KDF_SaucedemoTests
             login.LoginWithInvalidCredentials();
 
             // Assert
-            mockLoadData.Verify(x => x.ExecuteTestCases(It.IsAny<string[]>(), mockDriver.Object), Times.Once);
+            mockLoadData.Verify(x => x.ExecuteTestCases(It.IsAny<string[]>()), Times.Once);
         }
 
        
