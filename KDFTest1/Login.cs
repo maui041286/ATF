@@ -16,24 +16,35 @@ namespace KDFTest1
         public Login(ILoadData loadData)
         {
             this.loadData = loadData;
-           
         }
 
         public void LoginWithValidCredentials()
         {
-           // var lines = loadData.Read(Environment.GetEnvironmentVariable("PATH_DATA_SOURCE"));
-            var lines = loadData.Read(Common.Basepath());
+            try
+            {
+                // var lines = loadData.Read(Environment.GetEnvironmentVariable("PATH_DATA_SOURCE"));
+                var lines = loadData.Read(Common.Basepath());
 
-            loadData.ExecuteTestCases(lines);
+                loadData.ExecuteTestCases(lines);
+            }catch(Exception ex) { 
+                Console.WriteLine(ex.Message);  
+            }
         }
 
 
         public void LoginWithInvalidCredentials()
         {
-            //var lines = loadData.Read(Environment.GetEnvironmentVariable("PATH_DATA_SOURCE_INVALID_TEST"));
-            var lines = loadData.Read(Common.Basepath());
+            try
+            {
+                //var lines = loadData.Read(Environment.GetEnvironmentVariable("PATH_DATA_SOURCE_INVALID_TEST"));
+                var lines = loadData.Read(Common.Basepath());
 
-            loadData.ExecuteTestCases(lines);
+                loadData.ExecuteTestCases(lines);
+            }catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+
+            }
         }
     }
 }

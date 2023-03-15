@@ -1,13 +1,25 @@
-﻿Low Level Keyword,Data,Type_selector,Unique_ID,Keyword Description,High Level Keyword Description,High Level Keyword
-open_browser,chrome,,,Open the browser,Verify login with valid username and password,VerifyLoginWithValidUsernameAndPassword
-maximize_window,,,,Maximize the window,Verify login with valid username and password,VerifyLoginWithValidUsernameAndPassword
-launch_website,https://www.saucedemo.com/,,,Launch the website,Verify login with valid username and password,VerifyLoginWithValidUsernameAndPassword
-wait,1,,,Wait 1 second,Verify login with valid username and password,VerifyLoginWithValidUsernameAndPassword
-type_input,standard_user,id,user-name,send keys,Verify login with valid username and password,VerifyLoginWithValidUsernameAndPassword
-wait,3,,,Wait 3 second,Verify login with valid username and password,VerifyLoginWithValidUsernameAndPassword
-type_input,secret_sauce,id,password,send keys,Verify login with valid username and password,VerifyLoginWithValidUsernameAndPassword
-wait,3,,,Wait 3 second,Verify login with valid username and password,VerifyLoginWithValidUsernameAndPassword
-click_button,,id,login-button,Click button,Verify login with valid username and password,VerifyLoginWithValidUsernameAndPassword
-wait,3,,,Wait 3 second,Verify login with valid username and password,VerifyLoginWithValidUsernameAndPassword
-wait,5,,,Wait 5 second,Verify login with valid username and password,VerifyLoginWithValidUsernameAndPassword
-close_browser,,,,Close the browser,Verify login with valid username and password,VerifyLoginWithValidUsernameAndPassword
+﻿Low Level Keyword,Data,Type_selector,Unique_ID,Steps,Keyword Description,High Level Keyword Description,High Level Keyword
+open_browser,chrome,,,1,Open the browser,Verify login with valid username and password,LoginWithValidCredentials()
+maximize_window,,,,2,Maximize the window,Verify login with valid username and password,LoginWithValidCredentials()
+launch_website,https://www.saucedemo.com/,,,3,Launch the website,Verify login with valid username and password,LoginWithValidCredentials()
+wait,1,,,4,Wait 1 second,Verify login with valid username and password,LoginWithValidCredentials()
+type_input,standard_user,id,user-name,5,send keys,Verify login with valid username and password,LoginWithValidCredentials()
+wait,3,,,6,Wait 3 second,Verify login with valid username and password,LoginWithValidCredentials()
+type_input,secret_sauce,id,password,7,send keys,Verify login with valid username and password,LoginWithValidCredentials()
+wait,3,,,8,Wait 3 second,Verify login with valid username and password,LoginWithValidCredentials()
+click_button,,id,login-button,9,Click button,Verify login with valid username and password,LoginWithValidCredentials()
+wait,3,,,10,Wait 3 second,Verify login with valid username and password,LoginWithValidCredentials()
+wait,5,,,11,Wait 5 second,Verify login with valid username and password,LoginWithValidCredentials()
+close_browser,,,,12,Close the browser,Verify login with valid username and password,LoginWithValidCredentials()
+open_browser,chrome,,,1,Open the browser,"Verify ""Swag Labs"" Title present",VerifyText()
+maximize_window,,,,2,Maximize the window,"Verify ""Swag Labs"" Title present",VerifyText()
+launch_website,https://www.saucedemo.com/,,,3,Launch the website,"Verify ""Swag Labs"" Title present",VerifyText()
+wait,1,,,4,Wait 1 second,"Verify ""Swag Labs"" Title present",VerifyText()
+type_input,standard_user,id,user-name,5,send keys,"Verify ""Swag Labs"" Title present",VerifyText()
+wait,3,,,6,Wait 3 second,"Verify ""Swag Labs"" Title present",VerifyText()
+type_input,secret_sauce,id,password,7,send keys,"Verify ""Swag Labs"" Title present",VerifyText()
+wait,3,,,8,Wait 3 second,"Verify ""Swag Labs"" Title present",VerifyText()
+click_button,,id,login-button,9,Click button,"Verify ""Swag Labs"" Title present",VerifyText()
+wait,3,,,10,Wait 3 second,"Verify ""Swag Labs"" Title present",VerifyText()
+assert_text,Swag Labs…,,//body/div[@id='root']/div[@id='page_wrapper']/div[@id='contents_wrapper']/div[@id='header_container']/div[2]/div[1]/span[1]/select[1],11,"Verify ""Swag Labs"" Title","Verify ""Swag Labs"" Title present",VerifyText()
+close_browser,,,,12,Close the browser,"Verify ""Swag Labs"" Title present",VerifyText()

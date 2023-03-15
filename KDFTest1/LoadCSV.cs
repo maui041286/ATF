@@ -24,7 +24,7 @@ namespace KDFTest1
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
-            }    
+            }
 
             return lines;
 
@@ -32,6 +32,7 @@ namespace KDFTest1
 
         public void ExecuteTestCases(string[] lines)
         {
+
             IWebDriver driver = null;
             foreach (string line in lines)
             {
@@ -66,10 +67,10 @@ namespace KDFTest1
                         driver.Quit(); // close the browser
                         break;
                     case "assert_text":
-                        
                         if(!data.Equals(FindElement(driver, type_selector, unique_id).Text))
                         {
                             new ThrowsExceptionConstraint();
+                            //Console.WriteLine("Assert Text fail");
                         };
                         break;
                     default:
@@ -82,43 +83,68 @@ namespace KDFTest1
 
         public IWebElement FindElement(IWebDriver driver, string typeSelector, string unique_id)
         {
-            switch (typeSelector)
-            {
-                case "id":
-                    {
-                        return driver.FindElement(By.Id(unique_id));
+            IWebElement EmptyElement = null;
+
+                switch (typeSelector)
+                {
+                    case "id":
+                        {
+                        // return driver.FindElement(By.Id(unique_id));
+                        EmptyElement = driver.FindElement(By.Id(unique_id));
+                        break;
                     }
-                case "css":
-                    {
-                        return driver.FindElement(By.CssSelector(unique_id));
+                    case "css":
+                        {
+                        //return driver.FindElement(By.CssSelector(unique_id));
+                        EmptyElement = driver.FindElement(By.CssSelector(unique_id));
+                        break;
                     }
-                case"name":{
-                        return driver.FindElement(By.Name(unique_id));
+                    case "name": {
+                            //return driver.FindElement(By.Name(unique_id));
+                            EmptyElement= driver.FindElement(By.Name(unique_id));
+                        break;
                     }
-                case "class_name":
-                    {
-                        return driver.FindElement(By.ClassName(unique_id));
+                    case "class_name":
+                        {
+                        //return driver.FindElement(By.ClassName(unique_id));
+                        EmptyElement = driver.FindElement(By.ClassName(unique_id));
+                        break;
                     }
-                case "tag_name":
-                    {
-                        return driver.FindElement(By.TagName(unique_id));
+                    case "tag_name":
+                        {
+                        // return driver.FindElement(By.TagName(unique_id));
+                        EmptyElement = driver.FindElement(By.TagName(unique_id));
+                        break;
                     }
-                case "link_text":
-                    {
-                        return driver.FindElement(By.LinkText(unique_id));
+                    case "link_text":
+                        {
+                        //return driver.FindElement(By.LinkText(unique_id));
+                        EmptyElement = driver.FindElement(By.LinkText(unique_id));
+                        break;
                     }
-                case "partial_text":
-                    {
-                        return driver.FindElement(By.PartialLinkText(unique_id));
+                    case "partial_text":
+                        {
+                        //return driver.FindElement(By.PartialLinkText(unique_id));
+                        EmptyElement = driver.FindElement(By.PartialLinkText(unique_id));
+                        break;
                     }
-                case "css_selector":
-                    {
-                        return driver.FindElement(By.CssSelector(unique_id));
+                    case "css_selector":
+                        {
+                            //return driver.FindElement(By.CssSelector(unique_id));
+                            EmptyElement = driver.FindElement(By.CssSelector(unique_id));
+                        break;
                     }
 
-                default:
-                    return driver.FindElement(By.XPath(unique_id));
+                    default:
+                        //return driver.FindElement(By.XPath(unique_id));
+                        EmptyElement = driver.FindElement(By.XPath(unique_id));
+                        break;
             }
+            if (EmptyElement == null)
+            {
+                throw new Exception("Web element not found.." + unique_id);
+            }
+            return EmptyElement;
         }
     }
 }
