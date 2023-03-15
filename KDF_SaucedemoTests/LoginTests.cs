@@ -29,12 +29,12 @@ namespace KDF_SaucedemoTests
             SetUp();
             // Arrange
             mockLoadData.Setup(x => x.Read(It.IsAny<string>())).Returns(new string[] { "open_browser,,", "maximize_window,,", "launch_website,https://example.com,", "type_input,username,myusername", "type_input,password,mypassword", "click_button,login_button,", "wait,,", "close_browser,," });
-            var login = new Login(mockLoadData.Object, mockDriver.Object);
+            var login = new Login(mockLoadData.Object);
             // Act
             login.LoginWithValidCredentials();
 
             // Assert
-            mockLoadData.Verify(x => x.ExecuteTestCases(It.IsAny<string[]>(), mockDriver.Object), Times.Once);
+            mockLoadData.Verify(x => x.ExecuteTestCases(It.IsAny<string[]>()), Times.Once);
 
         }
 
@@ -44,7 +44,7 @@ namespace KDF_SaucedemoTests
             SetUp();
             // Arrange
             mockLoadData.Setup(x => x.Read(It.IsAny<string>())).Returns(new string[] { "open_browser,,", "maximize_window,,", "launch_website,https://example.com,", "type_input,username,invalidusername", "type_input,password,invalidpassword", "click_button,login_button,", "wait,,", "close_browser,," });
-            var login = new Login(mockLoadData.Object, mockDriver.Object);
+            var login = new Login(mockLoadData.Object);
 
             // Act
             login.LoginWithInvalidCredentials();
