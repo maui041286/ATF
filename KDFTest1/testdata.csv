@@ -1,13 +1,13 @@
-﻿Keyword,Data,Type_selector,Unique_ID
-open_browser,chrome,,
-maximize_window,,,
-launch_website,https://www.saucedemo.com/,,
-wait,1,,
-type_input,standard_user,id,user-name
-wait,3,,
-type_input,secret_sauce,id,password
-wait,3,,
-click_button,,id,login-button
-wait,3,,
-wait,5,,
-close_browser,,,
+﻿Low Level Keyword,Data,Type_selector,Unique_ID,Keyword Description,High Level Keyword Description,High Level Keyword
+open_browser,chrome,,,Open the browser,Verify login with valid username and password,VerifyLoginWithValidUsernameAndPassword
+maximize_window,,,,Maximize the window,Verify login with valid username and password,VerifyLoginWithValidUsernameAndPassword
+launch_website,https://www.saucedemo.com/,,,Launch the website,Verify login with valid username and password,VerifyLoginWithValidUsernameAndPassword
+wait,1,,,Wait 1 second,Verify login with valid username and password,VerifyLoginWithValidUsernameAndPassword
+type_input,standard_user,id,user-name,send keys,Verify login with valid username and password,VerifyLoginWithValidUsernameAndPassword
+wait,3,,,Wait 3 second,Verify login with valid username and password,VerifyLoginWithValidUsernameAndPassword
+type_input,secret_sauce,id,password,send keys,Verify login with valid username and password,VerifyLoginWithValidUsernameAndPassword
+wait,3,,,Wait 3 second,Verify login with valid username and password,VerifyLoginWithValidUsernameAndPassword
+click_button,,id,login-button,Click button,Verify login with valid username and password,VerifyLoginWithValidUsernameAndPassword
+wait,3,,,Wait 3 second,Verify login with valid username and password,VerifyLoginWithValidUsernameAndPassword
+wait,5,,,Wait 5 second,Verify login with valid username and password,VerifyLoginWithValidUsernameAndPassword
+close_browser,,,,Close the browser,Verify login with valid username and password,VerifyLoginWithValidUsernameAndPassword
