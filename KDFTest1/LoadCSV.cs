@@ -125,54 +125,45 @@ namespace KDFTest1
                 {
                     case "id":
                         {
-                        // return driver.FindElement(By.Id(unique_id));
                         elementBrowser = driver.FindElement(By.Id(unique_id));
                         break;
                     }
                     case "css":
                         {
-                        //return driver.FindElement(By.CssSelector(unique_id));
                         elementBrowser = driver.FindElement(By.CssSelector(unique_id));
                         break;
                     }
                     case "name": {
-                            //return driver.FindElement(By.Name(unique_id));
                             elementBrowser= driver.FindElement(By.Name(unique_id));
                         break;
                     }
                     case "class_name":
                         {
-                        //return driver.FindElement(By.ClassName(unique_id));
                         elementBrowser = driver.FindElement(By.ClassName(unique_id));
                         break;
                     }
                     case "tag_name":
                         {
-                        // return driver.FindElement(By.TagName(unique_id));
                         elementBrowser = driver.FindElement(By.TagName(unique_id));
                         break;
                     }
                     case "link_text":
                         {
-                        //return driver.FindElement(By.LinkText(unique_id));
                         elementBrowser = driver.FindElement(By.LinkText(unique_id));
                         break;
                     }
                     case "partial_text":
                         {
-                        //return driver.FindElement(By.PartialLinkText(unique_id));
                         elementBrowser = driver.FindElement(By.PartialLinkText(unique_id));
                         break;
                     }
                     case "css_selector":
                         {
-                            //return driver.FindElement(By.CssSelector(unique_id));
                             elementBrowser = driver.FindElement(By.CssSelector(unique_id));
                         break;
                     }
 
                     default:
-                        //return driver.FindElement(By.XPath(unique_id));
                         elementBrowser = driver.FindElement(By.XPath(unique_id));
                         break;
             }
