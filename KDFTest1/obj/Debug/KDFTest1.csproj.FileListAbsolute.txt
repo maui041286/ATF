@@ -41,3 +41,18 @@ D:\dotnetWorks\KDFTest3\KDFTest1\obj\Debug\KDFTest1.csproj.CoreCompileInputs.cac
 D:\dotnetWorks\KDFTest3\KDFTest1\obj\Debug\KDFTest1.csproj.CopyComplete
 D:\dotnetWorks\KDFTest3\KDFTest1\obj\Debug\KDFTest1.exe
 D:\dotnetWorks\KDFTest3\KDFTest1\obj\Debug\KDFTest1.pdb
+F:\Natasha\QA Testing\Winter term\Test Automation\Group Project\Final project New Naming\ATF\KDFTest1\bin\Debug\selenium-manager\linux\selenium-manager
+F:\Natasha\QA Testing\Winter term\Test Automation\Group Project\Final project New Naming\ATF\KDFTest1\bin\Debug\selenium-manager\macos\selenium-manager
+F:\Natasha\QA Testing\Winter term\Test Automation\Group Project\Final project New Naming\ATF\KDFTest1\bin\Debug\selenium-manager\windows\selenium-manager.exe
+F:\Natasha\QA Testing\Winter term\Test Automation\Group Project\Final project New Naming\ATF\KDFTest1\bin\Debug\KDFTest1.exe.config
+F:\Natasha\QA Testing\Winter term\Test Automation\Group Project\Final project New Naming\ATF\KDFTest1\bin\Debug\KDFTest1.exe
+F:\Natasha\QA Testing\Winter term\Test Automation\Group Project\Final project New Naming\ATF\KDFTest1\bin\Debug\KDFTest1.pdb
+F:\Natasha\QA Testing\Winter term\Test Automation\Group Project\Final project New Naming\ATF\KDFTest1\bin\Debug\nunit.framework.dll
+F:\Natasha\QA Testing\Winter term\Test Automation\Group Project\Final project New Naming\ATF\KDFTest1\bin\Debug\WebDriver.dll
+F:\Natasha\QA Testing\Winter term\Test Automation\Group Project\Final project New Naming\ATF\KDFTest1\bin\Debug\nunit.framework.xml
+F:\Natasha\QA Testing\Winter term\Test Automation\Group Project\Final project New Naming\ATF\KDFTest1\obj\Debug\KDFTest1.csproj.AssemblyReference.cache
+F:\Natasha\QA Testing\Winter term\Test Automation\Group Project\Final project New Naming\ATF\KDFTest1\obj\Debug\KDFTest1.csproj.SuggestedBindingRedirects.cache
+F:\Natasha\QA Testing\Winter term\Test Automation\Group Project\Final project New Naming\ATF\KDFTest1\obj\Debug\KDFTest1.csproj.CoreCompileInputs.cache
+F:\Natasha\QA Testing\Winter term\Test Automation\Group Project\Final project New Naming\ATF\KDFTest1\obj\Debug\KDFTest1.csproj.CopyComplete
+F:\Natasha\QA Testing\Winter term\Test Automation\Group Project\Final project New Naming\ATF\KDFTest1\obj\Debug\KDFTest1.exe
+F:\Natasha\QA Testing\Winter term\Test Automation\Group Project\Final project New Naming\ATF\KDFTest1\obj\Debug\KDFTest1.pdb
