@@ -19,7 +19,10 @@ namespace KDFTest1
             Login loginWebPages = new  Login(loadCSV);
             loginWebPages.LoginWithValidCredentials();
             //loginWebPages.LoginWithInvalidCredentials();
-
+            loadCSV.Final_report.ForEach(report =>
+            {
+                Console.WriteLine($"High Level Keyword Description: {report.high_level_key_word} High Level Keyword:{report.High_level_key_word_desc} Status: {report.status}");
+            });
             Console.WriteLine("Application Ended...");
             Console.ReadLine();
         }
