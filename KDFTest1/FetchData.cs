@@ -21,13 +21,13 @@ namespace KDFTest1
         {
             try
             {
-                var lines = loadData.Read(Common.Basepath());
+                var lines = loadData.Read(Common.Basepath()); // Read the data from a specified file path
 
-                loadData.ExecuteTestCases(lines);
+                loadData.ExecuteTestCases(lines); // Execute the test cases read from the file
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.Message); // Catch any exceptions that occur and display the error message
             }
         }
 
@@ -44,7 +44,7 @@ namespace KDFTest1
         //    }
         //}
 
-        
+
 
 
         //public void LoginWithInvalidCredentials()
