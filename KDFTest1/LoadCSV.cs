@@ -83,68 +83,71 @@ namespace KDFTest1
 
         public IWebElement FindElement(IWebDriver driver, string typeSelector, string unique_id)
         {
-            IWebElement EmptyElement = null;
+            IWebElement WebElement = null;
 
                 switch (typeSelector)
                 {
                     case "id":
                         {
                         // return driver.FindElement(By.Id(unique_id));
-                        EmptyElement = driver.FindElement(By.Id(unique_id));
+                        WebElement = driver.FindElement(By.Id(unique_id));
                         break;
                     }
                     case "css":
                         {
                         //return driver.FindElement(By.CssSelector(unique_id));
-                        EmptyElement = driver.FindElement(By.CssSelector(unique_id));
+                        WebElement = driver.FindElement(By.CssSelector(unique_id));
                         break;
                     }
                     case "name": {
-                            //return driver.FindElement(By.Name(unique_id));
-                            EmptyElement= driver.FindElement(By.Name(unique_id));
+                        //return driver.FindElement(By.Name(unique_id));
+                        WebElement = driver.FindElement(By.Name(unique_id));
                         break;
                     }
                     case "class_name":
                         {
                         //return driver.FindElement(By.ClassName(unique_id));
-                        EmptyElement = driver.FindElement(By.ClassName(unique_id));
+                        WebElement = driver.FindElement(By.ClassName(unique_id));
                         break;
                     }
                     case "tag_name":
                         {
                         // return driver.FindElement(By.TagName(unique_id));
-                        EmptyElement = driver.FindElement(By.TagName(unique_id));
+                        WebElement = driver.FindElement(By.TagName(unique_id));
                         break;
                     }
                     case "link_text":
                         {
                         //return driver.FindElement(By.LinkText(unique_id));
-                        EmptyElement = driver.FindElement(By.LinkText(unique_id));
+                        WebElement = driver.FindElement(By.LinkText(unique_id));
                         break;
                     }
                     case "partial_text":
                         {
-                        //return driver.FindElement(By.PartialLinkText(unique_id));
-                        EmptyElement = driver.FindElement(By.PartialLinkText(unique_id));
+                        
+                        WebElement = driver.FindElement(By.PartialLinkText(unique_id));
                         break;
                     }
                     case "css_selector":
                         {
-                            //return driver.FindElement(By.CssSelector(unique_id));
-                            EmptyElement = driver.FindElement(By.CssSelector(unique_id));
+                        
+                        WebElement = driver.FindElement(By.CssSelector(unique_id));
                         break;
                     }
 
                     default:
-                        //return driver.FindElement(By.XPath(unique_id));
-                        EmptyElement = driver.FindElement(By.XPath(unique_id));
+                    
+                        WebElement = driver.FindElement(By.XPath(unique_id));
                         break;
             }
-            if (EmptyElement == null)
+            
+            //If WebElement cannot be found, throw exception
+            if (WebElement == null)
             {
                 throw new Exception("Web element not found.." + unique_id);
             }
-            return EmptyElement;
+
+            return WebElement;
         }
     }
 }
