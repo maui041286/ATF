@@ -122,58 +122,63 @@ namespace KDFTest1
 
         public IWebElement FindElement(IWebDriver driver, string typeSelector, string unique_id)
         {
-            IWebElement elementBrowser = null; // declare a null WebElement object
+            IWebElement WebElement = null; // declare a null WebElement object
 
             switch (typeSelector) // check the type selector and return the corresponding WebElement object
             {
                 case "id":
                     {
-                        elementBrowser = driver.FindElement(By.Id(unique_id)); // find element by ID
+                        WebElement = driver.FindElement(By.Id(unique_id)); // find element by ID
                         break;
                     }
                 case "css":
                     {
-                        elementBrowser = driver.FindElement(By.CssSelector(unique_id)); // find element by CSS selector
+                        WebElement = driver.FindElement(By.CssSelector(unique_id)); // find element by CSS selector
                         break;
                     }
                 case "name":
                     {
-                        elementBrowser = driver.FindElement(By.Name(unique_id)); // find element by name attribute
+                        WebElement = driver.FindElement(By.Name(unique_id)); // find element by name attribute
                         break;
                     }
                 case "class_name":
                     {
-                        elementBrowser = driver.FindElement(By.ClassName(unique_id)); // find element by class name
+                        WebElement = driver.FindElement(By.ClassName(unique_id)); // find element by class name
                         break;
                     }
                 case "tag_name":
                     {
-                        elementBrowser = driver.FindElement(By.TagName(unique_id)); // find element by tag name
+                        WebElement = driver.FindElement(By.TagName(unique_id)); // find element by tag name
                         break;
                     }
                 case "link_text":
                     {
-                        elementBrowser = driver.FindElement(By.LinkText(unique_id)); // find element by exact link text
+                        WebElement = driver.FindElement(By.LinkText(unique_id)); // find element by exact link text
                         break;
                     }
                 case "partial_text":
                     {
-                        elementBrowser = driver.FindElement(By.PartialLinkText(unique_id)); // find element by partial link text
+                        WebElement = driver.FindElement(By.PartialLinkText(unique_id)); // find element by partial link text
                         break;
                     }
                 case "css_selector":
                     {
-                        elementBrowser = driver.FindElement(By.CssSelector(unique_id)); // find element by CSS selector (again)
+                        WebElement = driver.FindElement(By.CssSelector(unique_id)); // find element by CSS selector (again)
                         break;
                     }
                 default:
-                    {
-                        Console.WriteLine("Invalid type selector: " + typeSelector); // handle invalid type selector by printing an error message
-                        break;
-                    }
+                    WebElement = driver.FindElement(By.XPath(unique_id));
+                    break;
             }
 
-            return elementBrowser; // return the WebElement object
+            if (WebElement == null)
+            {
+                throw new Exception("Web element not found.." + unique_id);
+            }
+
+            return WebElement; // return the WebElement object
+
+
         }
     }
 }
