@@ -21,7 +21,7 @@ type_input,secret_sauce,id,password,7,send keys,"Verify ""Swag Labs"" Title pres
 wait,3,,,8,Wait 3 second,"Verify ""Swag Labs"" Title present",VerifyText()
 click_button,,id,login-button,9,Click button,"Verify ""Swag Labs"" Title present",VerifyText()
 wait,3,,,10,Wait 3 second,"Verify ""Swag Labs"" Title present",VerifyText()
-assert_text,Swag Labs…,,//body/div[@id='root']/div[@id='page_wrapper']/div[@id='contents_wrapper']/div[@id='header_container']/div[2]/div[1]/span[1]/select[1],11,"Verify ""Swag Labs"" Title","Verify ""Swag Labs"" Title present",VerifyText()
+assert_text,Swag Labs,,/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1],11,"Verify ""Swag Labs"" Title","Verify ""Swag Labs"" Title present",VerifyText()
 close_browser,,,,12,Close the browser,"Verify ""Swag Labs"" Title present",VerifyText()
 open_browser,chrome,,,1,Open the browser,Verify the tax amount,VerifyTax()
 maximize_window,,,,2,Maximize the window,Verify the tax amount,VerifyTax()
