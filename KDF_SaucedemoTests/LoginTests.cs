@@ -30,7 +30,7 @@ namespace KDF_SaucedemoTests
             // Arrange
             mockLoadData.Setup(x => x.Read(It.IsAny<string>())).Returns(new string[] { "open_browser,,", "maximize_window,,", "launch_website,https://example.com,", "type_input,username,myusername", "type_input,password,mypassword", "click_button,login_button,", "wait,,", "close_browser,," });
             var WebAppTests = new FetchData(mockLoadData.Object);
-            // Act
+            // Act.
             WebAppTests.ExecuteTasks();
 
             // Assert
